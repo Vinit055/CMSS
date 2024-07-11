@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex1 {
+    flex: 1;
+ }
+ @keyframes appear{
+    80%{opacity: 1}
+    85%{opacity: 0.9;}
+    90%, 95%, 100%{opacity: 0;}
+ }
+
+#card{
+    background-color: white;
+    padding: 0 10px;
+    width: fit-content;
+    height: 120px;
+    display: flex;
+    position: relative;
+    margin: 10px auto;
+    /* border: solid 1px #A5A7C3; */
+    border-radius: 12px;
+    box-shadow: 1px 10px 20px 1px rgb(235, 235, 235);
+    animation: appear linear forwards;
+    animation-timeline: view() ;
+}
+
+img{
+    width: 95px;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#info{
+    padding: 5px 0;
+    margin-left: 105px;
+    height: 77px;
+    font-family: "Roboto";
+}
+
+#info span{
+    font-size: 20px;
+    font-family: "Roboto";
+    color: #626171;
+}
+
+#emp-id{
+    color: #A5A7C3;
+    font-size: 14px;
+}
+
+#position{
+    color: #2B5175;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+#icons{
+    align-self: center;
+    margin-left: 25px;
+}
+
+#icons i{
+    margin: 0 12px;;
+}
+
+#searchContainer{
+    position: sticky;
+    top: 20px;
+}
+
+#searchBar{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    border : none;
+    border-radius: 12px;
+    background-color: #f1f0f6;
+    color: #A19DC2;
+    padding: 10px 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.searchIcon{
+    background-image: url(images/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 15%;
+}
+
+#bottomNav{
+    height: 89px; 
+    background-color: white; 
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: sticky;
+    bottom: 0;
+    box-shadow: -13px -28px 28px -19px rgba(202,193,193,0.45), 0px 25px 20px -20px rgba(0,0,0,0.45);
+}
+.left{
+    height: 63px;
+    width: 130px;
+    background-color: white;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    color: #A2A8CC;
+    margin: 0 auto
+}
+
+.icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;  
+}
+
+#pen{
+    background-image: url(images/pen);
+}
+
+#muster{
+    background-image: url(images/muster);
+}
+
+#late{
+    background-image: url(images/late);
+}
+
+#holiday{
+    background-image: url(images/holiday);
+}
+
+.leave > p{
+    font-size: 12px;
+    font-weight: bold;
+}
+.right{
+    margin: 0 auto;
+}
+
+#left{
+    position: relative;
+}
+
+#right{
+    height: 80px;
+    margin-left: 100px;
+}
+
+.right > p{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#left-bottom::after{
+    content: url(images/basil--info-rect-outline.png);
+    background-color: #E7853A;
+    padding-top: 16px;
+    width: 69px;
+    height: 69px;
+    border-radius: 26px;
+    position: absolute;
+    bottom: 30px;
+    left: 41%;
+}
+
+#left-bottom::before{
+    content: 'I- PASS';
+    color: #E7853A;
+    position: absolute;
+    bottom: 8px;
+    left: 44%;
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#dropButton{
+    background-image: url(images/dropdown);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 47px; 
+    width : 50px;
+    top: 20px; 
+    right: 3%; 
+    margin-left: 20px;
+    border: 2px solid #9ea3c9;
+}
