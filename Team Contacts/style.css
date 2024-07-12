@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    background: linear-gradient(180deg,#f1f0f6,#E7E5EE);
+    height: 100%;
 }
 
 .flex1 {
@@ -104,7 +106,7 @@ img{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     position: sticky;
-    bottom: 0;
+    bottom: 0%;
     box-shadow: -13px -28px 28px -19px rgba(202,193,193,0.45), 0px 25px 20px -20px rgba(0,0,0,0.45);
 }
 .left{
